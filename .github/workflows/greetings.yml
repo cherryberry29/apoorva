@@ -1,0 +1,16 @@
+name: Greeting Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Greeting
+        run: echo "Hello! Welcome to our React project."
